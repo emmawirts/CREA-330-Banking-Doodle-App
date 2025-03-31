@@ -1,0 +1,101 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F4C1; /* Soft yellow background */
+    color: #3C3F36; /* Moss green text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 158px; /* Increased padding at the top to give more space */
+  }
+  
+  #mascot {
+    width: 150px; /* Increased width for a larger image */
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 100%; /* Ensure the image fits within the container */
+  }
+  
+  h1 {
+    color: #F2A900; /* Golden yellow text */
+    margin-top: 5px; /* Added margin to give some space between the image and the title */
+  }
+  
+  h2 {
+    color: #3C3F36; /* Moss green heading */
+    margin-bottom: 15px;
+  }
+  
+  /* Form styles */
+  form {
+    background-color: #FFFFFF; /* White background for forms */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #3C3F36; /* Moss green label color */
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #F2A900; /* Yellow border for input fields */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #3C3F36; /* Moss green text inside inputs */
+    box-sizing: border-box; /* Ensure padding and borders are included in total width */
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #3C3F36; /* Moss green focus border */
+  }
+  
+  button {
+    background-color: #F2A900; /* Yellow button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #F29C00; /* Slightly darker yellow on hover */
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    body {
+      padding: 20px;
+    }
+  
+    header {
+      margin-bottom: 10px;
+    }
+  
+    #mascot {
+      width: 120px; /* Slightly smaller mascot on smaller screens */
+    }
+  }
+  
