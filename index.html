@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goldendoodle Bank</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="goldendoodle-mascot.png" alt="Golden Doodle Mascot" id="mascot">
+    <h1>Goldendoodle App</h1>
+  </header>
+
+  <section id="login-section">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username</label>
+      <input id="username" name="user" type="text" required>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="register-section">
+    <h2>Register</h2>
+    <form id="registerForm" onsubmit="register(event)">
+      <label for="user">Username (required)</label>
+      <input id="user" name="user" type="text" maxlength="20" required>
+      
+      <label for="currency">Currency (required)</label>
+      <input id="currency" name="currency" type="text" value="$" maxlength="5" required>
+      
+      <label for="description">Description</label>
+      <input id="description" name="description" type="text" maxlength="100">
+      
+      <label for="balance">Current balance</label>
+      <input id="balance" name="balance" type="number" value="0">
+      
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+</html>
